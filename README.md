@@ -1800,4 +1800,14 @@ $ samtools flagstat K3_old.bam
 0 + 0 with mate mapped to a different chr
 0 + 0 with mate mapped to a different chr (mapQ>=5)
 ```
+```
+$ samtools sort <file name>.bam -o <file name>_sorted.bam
+```
 
+```
+$ samtools index <file name>_sorted.bam &
+```
+GFF annotation of GRCh38p14 was downloaded from NCBI.
+```
+$ stringtie -p 13 -G GCF_000001405.40_GRCh38.p14_genomic.gff -o <file name>.gff -l <file name> <file name>_sorted.bam
+```
