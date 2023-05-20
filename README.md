@@ -156,3 +156,5 @@ feature_counts.txt.summary
 |Unassigned_Overlapping_Length	|0	|0	|0	|0	|0	|0	|0	|0	|0	|0	|0	|0|
 |Unassigned_Ambiguity	|482435	|476295	|507220	|453372	|553823	|489034	|408998	|522436	|567386	|467357	|508373	|549660|
 
+
+Then, the obtained count matrix was used in R script (provided).
