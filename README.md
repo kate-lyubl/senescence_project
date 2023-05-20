@@ -1,6 +1,12 @@
-# senescence_project
+## RNA-seq Analysis of Senescent Mesenchymal Stem Cells
 Project for Bioinformatics Institute
 
+Authors:
+
+ - Ekaterina Lyublinskaya
+ - Julia Ivanova
+
+### Introduction
 
 Advancements in medical science have improved the lives of individuals with diseased or injured organs. However, organ transplantation from donors has limitations, including the time-consuming search for suitable donors and the risk of organ rejection. Regenerative medicine offers a promising alternative by developing biological substitutes to restore and maintain normal tissue function.
 
@@ -12,12 +18,38 @@ Endometrial mesenchymal stem cells (eMSCs) are clonogenic cells derived from the
 
 Cellular senescence is a challenge in regenerative medicine, especially in stem cell-based therapies. Senescence occurs when proliferating cells encounter damage, stress, or extreme short telomeres, leading to a stable cell cycle arrest and the activation of a secretory phenotype. Various markers define cellular senescence, and their presence may vary depending on the specific cellular culture [5].
 
-This study focused on senescence in eMSCs analyzed transcriptome data from different stages of cultivation. The findings showed that eMSCs exhibited transcriptomic characteristics of senescence after one month of cultivation, despite remaining proliferative. Several cellular pathways were significantly altered, including selenocysteine metabolism, ubiquitin-mediated degradation of cell cycle proteins, extracellular matrix organization, and DNA repair.
+### Aim, task and data
+
+This study focused on senescence in eMSCs analyzed transcriptome data from different stages of cultivation. 
+
+Objectives:
+
+- Align transcriptomes of high-proliferative eMSC (Young), eMSC after one month of cultivation (Medium), and replicative senescent eMSC after two months of cultivation (Senescent)
+- Cluster sample
+- Analyze DEG of Medium and Senescent groups against Young group
+- Find enrichment pathways and pathways categories for Medium and Senescent groups
+- Compare pathways between Medium and Senescent groups
+
+There were 2 samples of high-proliferative eMSC, 3 samlples of eMSC after 1 month of cultivation, and 3 samples of replicative senescent cells after 2 months of cultivation. 
+
+### Workflow
+
+Alignment procedure you can see in the alignment branch. The process of obtaining the count matrix is described in the DEG branch. R script of RNA-Seq analysis is available.
+
+### Results
+
+The findings showed that eMSCs exhibited transcriptomic characteristics of senescence after one month of cultivation, despite remaining proliferative. Several cellular pathways were significantly altered, including selenocysteine metabolism, ubiquitin-mediated degradation of cell cycle proteins, extracellular matrix organization, and DNA repair. Some of the results you can see in the presentation file. 
 
 These findings have important implications for the therapeutic potential of eMSCs and highlight limitations in their application for regenerative medicine. The study also contributes to understanding stress-induced senescence and the mechanisms involved in this process.
 
+### References
+
 [1] Atala, A. (2012). Regenerative medicine strategies. Journal of pediatric surgery, 47(1), 17-28.
+
 [2] Mao, A. S., & Mooney, D. J. (2015). Regenerative medicine: Current therapies and future directions. Proceedings of the National Academy of Sciences, 112(47), 14452-14459.
+
 [3] Bozorgmehr, M., Gurung, S., Darzi, S., Nikoo, S., Kazemnejad, S., Zarnani, A. H., & Gargett, C. E. (2020). Endometrial and menstrual blood mesenchymal stem/stromal cells: biological properties and clinical application. Frontiers in cell and developmental biology, 8, 497.
+
 [4] Domnina, A., Alekseenko, L., Kozhukharova, I., Lyublinskaya, O., Shorokhova, M., Zenin, V., Fridlyanskaya, I., & Nikolsky, N. (2021). Generation of Therapeutically Potent Spheroids from Human Endometrial Mesenchymal Stem/Stromal Cells. Journal of Personalized Medicine, 11(6), 466.
+
 [5] González‐Gualda, E., Baker, A. G., Fruk, L., & Muñoz‐Espín, D. (2021). A guide to assessing cellular senescence in vitro and in vivo. The FEBS journal, 288(1), 56-80.
