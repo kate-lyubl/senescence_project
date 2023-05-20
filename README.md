@@ -1,5 +1,5 @@
-# DGE
-## DGE with Deseq2
+# DEG
+## DEG with Deseq2
 
 ```
 $ gffread ../GCF_000001405.40_GRCh38.p14_genomic.gff -T -o annotation.gtf
